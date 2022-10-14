@@ -1,0 +1,178 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("assets/Vans-Logo.jpg");
+}
+
+.nav li {
+    float: right;
+}
+
+.nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.nav li a:hover {
+    background-color: #ec0505;
+    border-radius: 1rem;
+}
+
+.nav img {
+    display: flex;
+    float: left;
+    padding: 6px 16px;
+    width: 150px;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.main {
+    background-image: url("assets/background.jpg");
+    height: 100%;
+}
+
+.main-content {
+    margin-top: 400px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 14px 16px;
+    overflow: hidden;
+}
+
+.servicios p {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: xx-large;
+    padding: 0px 44px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    transition: transform .5s;
+}
+
+.servicios p:hover {
+    background-color: gray;
+    color: black;
+    border-radius: 1rem;
+    transform: scale(1.1);
+}
+
+.servicios img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: transform .5s;
+}
+
+.servicios img:hover {
+    transform: scale(1.1);
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 14px 16px;
+}
+
+.videos iframe {
+    border-radius: 1rem;
+    width: 30vw;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    border-style: solid;
+    color: white;
+    background-color: rgb(14, 13, 12);
+}
+
+.titulo_videos {
+    text-align: center;
+    text-transform: uppercase;
+    border-style: solid;
+    color: white;
+    background-color: rgb(14, 13, 12);
+}
+
+.footer {
+    box-shadow: 0px 0px 10px 0px rgb(27, 25, 25) inset;
+}
+
+.footer p {
+    text-align: center;
+    text-transform: uppercase;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 14px 16px;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(27, 25, 25);
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+
+    .servicios {
+        display: block;
+    }
+
+    .servicios img {
+        width: 100%;
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+    .servicios img:hover {
+        transform: scale(1.0);
+    }
+
+    .videos {
+        display: block;
+    }
+
+    .videos iframe {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+  }
+
+
+@media (max-width: 652px) {
+    .nav img {
+        padding: 14px 16px;
+        width: 90%;               
+    }
+
+    .nav ul {
+        display: grid;
+    }
+}
+
+
