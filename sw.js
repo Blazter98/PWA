@@ -49,4 +49,17 @@ self.addEventListener('activate', e=>{
             })
     )
 
+    //Evento fetch
+    self.addEventListener('fetch', e=> {
+        e.respondWidth(
+            caches.match(e.request)
+            .then(res => {
+                if(res){
+                    return res;
+                }
+                return fetch(e.request);
+            })
+        )
+    })
+
 })
