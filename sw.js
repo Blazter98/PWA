@@ -5,8 +5,13 @@ const CACHE_NAME = 'v1.cache.AWP';
 var urlToCache = [
     './',
     './css/style.css',
-    './images/1.png',
-    './images/2.png'
+    './assets/background.jpg',
+    './assets/eventos.jpg',
+    './assets/logo.jpg',
+    './assets/ropa.jpg',
+    './assets/ropa.webp',
+    './assets/tenis.jpeg',
+    './assets/Vans-Logo.jpg'
 ]
 
 // Evento Install
